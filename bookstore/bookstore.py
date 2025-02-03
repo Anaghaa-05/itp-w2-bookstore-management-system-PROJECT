@@ -1,7 +1,7 @@
 """I AM IN GROUP-7. BUT THIS IS MY SOLO SOLUTION. ME AND MY PARTNER DID START TO WORK TOGETHER, BUT THEN HE HAD TO LEAVE FOR A WHILE
     SO WE DECIDED TO DO THE PROJECT SEPERATELY AND COMPARE AND CONTRAST OUR CODE AT A LATER TIME"""
 def create_bookstore(name):
-    return {'name':name, 'author_id':0, 'authlist':[], 'lebook_id':0, 'booklist':[], 'dabook':[]}
+    return {'name':name, 'author_id':0, 'jias':[], 'lebook_id':0, 'booklist':[], 'dabook':[]}
 
 def add_author(bookstore, name, nationality):
     bookstore['author_id']+=1
@@ -11,13 +11,13 @@ def add_author(bookstore, name, nationality):
 
 
 def get_author_by_name(bookstore, name):
-    for author in bookstore['authlist']:
+    for author in bookstore['jias']:
         if name==author['name']:
             return author
 
 
 def get_author_by_id(bookstore, author_id):
-    for author in bookstore['authlist']:
+    for author in bookstore['jias']:
         if author_id==author['id']:
             return author
 
